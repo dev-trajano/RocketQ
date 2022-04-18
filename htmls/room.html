@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+    <head>
+        <title> Rocket.Q - Perguntas e Respostas</title>
+        <meta charset="UTF-08">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!--view Port-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+
+        <!--css-->
+        <link rel="stylesheet" href="style/global.css">
+        <link rel="stylesheet" href="style/modal.css">
+        <link rel="stylesheet" href="style/room.css">
+
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="room" class="content">
+            <header>
+                <a href="#" class="" id="">
+                    <img src="assets/Logo.svg" alt="Rocket.Q logo" />
+                </a>
+
+                <div class="buttons">
+
+                    <div class="button outlined">
+                        #3232434
+                        <img src="assets/copy.svg" alt="copiar numero da sala" />
+                    </div>
+                    <a href="#" class="button">
+                        <img src="assets/users-white.svg" alt="Criar uma sala">
+                        Criar sala
+                    </a>
+
+                </div>
+            </header>
+            <main>
+                <section id = "question-form">
+                    <h2>Faça sua pergunta</h2>
+                    <form action="">
+                        <label class="sr-only" for-id="question">O que você quer pergunta</label>
+                        <textarea name="question" id="question" placeholder="O que você quer pergunta?" ></textarea>
+                        <footer>
+                            <div>
+                                <img src="assets/lock.svg" alt="">
+                                Esta pergunta é anônima
+                            </div>
+                            <button>Enviar</button>
+                        </footer>
+                    </form>
+                </section>
+                
+                <section id="questions">
+                    <h2 class="sr-only">Perguntas da comunidade</h2>
+                        <div class="questions">
+
+                            <div class="question-wrapper">
+                                <div class="question-wrapper">
+                                    <img src="assets/avatar.svg" alt="avatar">
+                                </div>
+
+                                <div class="question">
+                                    <p>Qual a diferença entre const, var e let?</p>
+                                </div>
+
+                                <div class="actions">
+                                    <a href="#" class="check">
+                                        <img src="assets/check.svg" alt="Marca como lida">
+                                        Marca como lida
+                                    </a>
+                                    <a href="#" class="delete">
+                                        <img src="assets/trash.svg" alt="Excluir">
+                                        Excluir
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="question-wrapper">
+                                <div class="question-wrapper">
+                                    <img src="assets/avatar.svg" alt="avatar">
+                                </div>
+
+                                <div class="question">
+                                    <p>O que é Javascript?</p>
+                                </div>
+
+                                <div class="actions">
+                                    <a href="#" class="check">
+                                        <img src="assets/check.svg" alt="Marca como lida">
+                                        Marca como lida
+                                    </a>
+                                    <a href="#" class="delete">
+                                        <img src="assets/trash.svg" alt="Excluir">
+                                        Excluir
+                                       
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="question-wrapper read">
+                                <div class="question-wrapper">
+                                    <img src="assets/avatar.svg" alt="avatar">
+                                </div>
+
+                                <div class="question">
+                                    <p>O que é Typescript?</p>
+                                </div>
+
+                                <div class="actions">
+                                    
+                                    </a>
+                                    <a href="#" class="delete">
+                                        <img src="assets/trash.svg" alt="Excluir">
+                                        Excluir
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            
+            </main>
+        </div>
+
+        <!----- Modal ----->
+        <div class="modal-wrapper active">
+            <div class="modal">
+                <h2>Excluir pergunta</h2>
+                <p>Tem certeza que você deseja excluir esta perguntar?</p>
+                
+                <form action="#">
+                    <label class="sr-only" for-id="password">Digite sua senha admin</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha"/>
+                   
+                    <div class="buttons">
+                        <div class="button grey">Cancelar</div>
+                        <button class="red">Sim excluir</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
